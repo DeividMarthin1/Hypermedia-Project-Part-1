@@ -1,4 +1,4 @@
-/* Estilos generales */
+/* General Styles */
 body {
     font-family: 'Arial', sans-serif;
     color: #333;
@@ -42,7 +42,7 @@ body {
     opacity: 0.9;
 }
 
-/* Contenido principal */
+/* Principal Content */
 .content {
     display: flex;
     padding: 2rem;
@@ -165,7 +165,7 @@ body {
     cursor: pointer;
 }
 
-/* Estilo de la foto de perfil */
+/* Profile image style */
 .profile-pic {
     text-align: center;
     margin-bottom: 1.5rem;
