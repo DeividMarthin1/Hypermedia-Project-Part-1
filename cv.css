@@ -1,0 +1,181 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.cv-container {
+    width: 80%;
+    max-width: 900px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+
+.header {
+    background: linear-gradient(to right, #1e90ff, #00bcd4);
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+.header p {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+/* Contenido principal */
+.content {
+    display: flex;
+    padding: 2rem;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 30%;
+    padding-right: 1.5rem;
+    border-right: 2px solid #e6e6e6;
+}
+
+.sidebar h2 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.sidebar h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 50px;
+    height: 3px;
+    background-color: #1e90ff;
+}
+
+.sidebar p, .sidebar ul {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 0.3rem 0;
+    padding-left: 1.2rem;
+    position: relative;
+    font-size: 0.95rem;
+}
+
+.sidebar ul li::before {
+    content: '✔️';
+    position: absolute;
+    left: 0;
+    font-size: 0.8rem;
+    color: #1e90ff;
+}
+
+/* Main content */
+.main {
+    width: 70%;
+    padding-left: 1.5rem;
+}
+
+/* Sections */
+.section {
+    margin-bottom: 1.5rem;
+}
+
+.section h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #1e90ff;
+    position: relative;
+}
+
+.section h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 30px;
+    height: 3px;
+    background-color: #00bcd4;
+}
+
+.section .item {
+    margin-bottom: 1rem;
+}
+
+.section .item h4 {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #333;
+    font-weight: bold;
+}
+
+.section .item p {
+    font-size: 1rem;
+    margin: 0.2rem 0;
+    line-height: 1.5;
+}
+
+/* Skills */
+.skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+
+.skills li {
+    background-color: #00bcd4;
+    color: #fff;
+    margin: 0.3rem;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.skills li:hover {
+    background-color: #1e90ff;
+    cursor: pointer;
+}
+
+/* Estilo de la foto de perfil */
+.profile-pic {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.profile-pic img {
+    width: 170px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #1e90ff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
